@@ -2,31 +2,40 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simone.caffudramenti.com</title>
     <link rel="icon" type="image/png", href="static\pics\simon.png">
     <link rel="stylesheet" type="text/css" href="static\Myfont\css\button.css" >
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <center><label for="name">SCEGLI LA COMBO</label><center>
+        <center><label id="tit">SCEGLI LA COMBO</label><center>
         <br>
         <center><img src="static\pics\Simo.ico" ><center>
         <br>
-        <select id ="sceglicombo" name="sceglicombo">
-            <option value="10">Carezza (combo 1-10)</option>
-            <option value="15">Saluto (combo 1-15)</option>
-            <option value="20">Normale (combo 1-20)</option>
-            <option value="25">Sparing (combo 1-25)</option>
-            <option value="30">Brutal (combo 1-30)</option>
-            <option value="50">Distruzione (combo 1-50)</option>
-            <option value="330">Quindi (combo 233-330)</option>
-        </select>
+            <select id ="sceglicombo" name="sceglicombo">
+              <option value="10">Carezza (combo 1-10)</option>
+              <option value="15">Saluto (combo 1-15)</option>
+              <option value="20">Normale (combo 1-20)</option>
+              <option value="25">Sparing (combo 1-25)</option>
+              <option value="30">Brutal (combo 1-30)</option>
+              <option value="50">Distruzione (combo 1-50)</option>
+              <option value="330">Quindi (combo 233-330)</option>
+            </select>
         <br>
         <br>
-        <a href="pag.html">
-            <button id="Bottone">Crea combo</button>
-        </a>
+        <button id="Bottone" onclick="print1()">Crea combo</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+            <label id="log2"></label>
+            <label id="log"></label>
+        <center>
+        <center><label id="combo"></label><center>
     </div>
 </body>
 </html>
