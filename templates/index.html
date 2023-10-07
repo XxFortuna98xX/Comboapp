@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Label Example</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Myfont/css/button.css') }}">
+    <title>Simone.caffudramenti.com</title>
+    <link rel="icon" type="image/png", href="static\pics\simon.png">
+    <link rel="stylesheet" type="text/css" href="static\Myfont\css\button.css" >
 </head>
 <body>
     <div class="container">
         <center><label for="name">SCEGLI LA COMBO</label><center>
         <br>
-        <center><img src="{{ user_image }}" ><center>
+        <center><img src="static\pics\Simo.ico" ><center>
         <br>
-        <select id="Sceglicombo">
-             <option value="10">Carezza (combo 1-10)</option>
-             <option value="15">Saluto (combo 1-15)</option>
-             <option value="20">Normale (combo 1-20)</option>
-             <option value="25">Sparing (combo 1-25)</option>
-             <option value="30">Brutal (combo 1-30)</option>
-             <option value="50">Distruzione (combo 1-50)</option>
-             <option value="330">Quindi (combo 233-330)</option>
-        </select>
-        <br>
-        <br>
-        <center><button id="Bottone">Crea combo</button><center>
+        <form method="POST" action="/gen">
+            <select id ="sceglicombo" name="sceglicombo">
+              <option value="10">Carezza (combo 1-10)</option>
+              <option value="15">Saluto (combo 1-15)</option>
+              <option value="20">Normale (combo 1-20)</option>
+              <option value="25">Sparing (combo 1-25)</option>
+              <option value="30">Brutal (combo 1-30)</option>
+              <option value="50">Distruzione (combo 1-50)</option>
+              <option value="330">Quindi (combo 233-330)</option>
+            </select>
+            <br>
+            <br>
+            <button id="Bottone">Crea combo</button>
+            <a href="https://www.google.com/">
+                <button>ciao</button>
+            </a>
+        </form>
     </div>
 </body>
 </html>
