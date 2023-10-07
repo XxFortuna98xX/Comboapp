@@ -1,0 +1,19 @@
+#Bottone {
+    width: 150px;
+    height: 40px;
+    background-color: #404494;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#sceglicombo {
+    width: 200px; /* Imposta la larghezza del menu a discesa */
+    height: 30px;
+    background-color: #404494; /* Imposta il colore di sfondo */
+    color: white; /* Imposta il colore del testo */
+    border: 1px solid black; /* Imposta lo stile del bordo */
+    border-radius: 5px; /* Arrotonda gli angoli */
+}
+body {
+    background-color: #545675; /* Imposta il colore di sfondo della pagina */
+}
